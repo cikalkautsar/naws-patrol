@@ -1,0 +1,86 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 120px 40px 40px 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Gambar kiri - TIDAK DIUBAH */
+.image-card {
+  flex: 3;
+  max-width: 450px;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.qr-card {
+  background-color: #ffffff;
+  flex: 2;
+  max-width: 570px;
+  width: 100%;
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 15px;
+  align-items: center;
+}
+
+.qr-card img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #1e40af;
+}

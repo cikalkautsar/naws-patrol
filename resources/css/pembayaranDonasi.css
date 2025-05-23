@@ -1,0 +1,168 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 120px 40px 40px 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Gambar kiri - TIDAK DIUBAH */
+.image-card {
+  flex: 3;
+  max-width: 450px;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Konten kanan: instruksi pembayaran */
+.payment-card,
+.success-card {
+  background-color: #F3EEEE;
+  flex: 2;
+  max-width: 570px;
+  width: 100%;
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 15px;
+}
+
+.payment-card h2 {
+  font-size: 20px;
+  color: #F0592C;
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid #F0592C;
+  border-width: 2px;
+}
+
+.success-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-width: 2px;
+}
+
+.payment-card p {
+  margin: 0;
+}
+
+.payment-card ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.highlight-orange {
+  color: #FAAF32;
+}
+
+.qr-btn {
+  background-color: #2B6ED6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: #2B6ED6;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.button-group a {
+  flex: 1;
+  background-color: #2B6ED6;
+  color: white;
+  text-align: center;
+  padding: 12px 16px;
+  font-size: 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.button-group a:hover {
+  background-color: #1f56b3;
+}
+
+button.back-btn,
+button#confirmPaymentBtn {
+  background-color: #2B6ED6;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: block;           /* Supaya bisa di-center pakai margin */
+  margin: 160px auto 0 auto;
+}
+
+#successMessage {
+  min-height: 400px; /* Biar ruang cukup buat margin tombol */
+}
+
+.section-divider {
+  border: none;
+  border-top: 2px solid #F0592C;
+  margin: 20px 0 10px;
+  width: 100%;
+  border-width: 2px;
+}
+
+
+

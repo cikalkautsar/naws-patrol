@@ -1,0 +1,158 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 120px 40px 40px 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Kartu gambar kiri */
+.image-card {
+  flex: 3;
+  max-width: 450px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Kartu kanan untuk pilihan metode pembayaran */
+.payment-card {
+  flex: 2;
+  max-width: 570px;
+  width: 100%;
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.payment-card h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.highlight-orange {
+  color: #FAAF32;
+}
+
+.highlight-blue {
+  color: #2B6ED6;
+}
+
+.select-wrapper {
+  width: 100%;
+}
+
+.select-wrapper select {
+  width: 100%; /* pastikan select juga full */
+  box-sizing: border-box; /* biar padding tidak bikin melar */
+}
+
+.payment-card {
+  padding: 30px 15px; /* sempitkan sedikit */
+}
+
+
+.select-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.select-group select {
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn {
+  background-color: #2B6ED6;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+  margin-top: 100px;
+  max-width: 400px;
+}
+
+.submit-btn:hover {
+  background-color: #155ab6;
+}
+
+.payment-instruction {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  margin-top: 30px;
+  max-width: 600px;
+  margin-inline: auto;
+  font-size: 15px;
+}
+
+.payment-instruction h3 {
+  color: #FA5A32;
+  margin-top: 0;
+}
+
+.payment-instruction ul {
+  padding-left: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.qr-btn {
+  background-color: #2B6ED6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+

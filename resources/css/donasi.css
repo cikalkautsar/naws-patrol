@@ -1,0 +1,230 @@
+body {
+  font-family: 'Poopins', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 120px 40px 40px 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.image-card {
+  flex: 3;
+  max-width: 350px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+.form-card {
+  flex: none;
+  width: 100%;
+  max-width: 770px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-card h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #FAAF32;
+  font-weight: bold;
+}
+
+.blue-text {
+  color: #2B6ED6;
+  font-weight: bold;
+}
+
+.nominal-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 40px;
+  margin-bottom: 24px;
+  margin-top: 40px;
+}
+
+.nominal-buttons button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.nominal-buttons button:hover {
+  background-color: #769AE9;
+}
+
+.custom-amount {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: text;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  grid-column: 1 / 4; /* Posisikan di tengah dari 3 kolom */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-amount input {
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.submit-btn {
+  display: inline-block;
+  background-color: #2B6ED6;
+  color: white;
+  font-size: 16px;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease;
+  margin-top: 25px;
+}
+
+.submit-btn:hover {
+  background-color: #2B6ED6;
+}
+
+.transparency-card {
+  background-color: #FBAF2C;
+  color: white;
+  padding: 30px 24px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.transparency-card h2 {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.transparency-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.received {
+  flex: 1;
+  min-width: 250px;
+}
+
+.received p {
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.amount {
+  background-color: white;
+  color: #FBAF2C;
+  border-radius: 12px;
+  padding: 14px 24px;
+  font-size: 24px;
+  font-weight: bold;
+  width: 80%; /* <-- dari width: fit-content jadi full */
+  height: 70px; /* <-- samakan tinggi */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* <-- biar isi di tengah */
+  box-sizing: border-box;
+}
+
+.amount .plus {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.usage {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.usage-box {
+  background-color: white;
+  border-radius: 12px;
+  height: 70px;
+  width: 80%;
+}
+
+.usage-label {
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 5px;
+  text-align: right;
+  width: 100%;
+}
+
+.thankyou-text {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.thankyou-text p {
+  margin: 4px 0;
+}
+
+.thankyou-text .subtext {
+  font-size: 12px;
+  font-weight: 400;
+}
+
