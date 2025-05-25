@@ -26,7 +26,7 @@
       <div class="hero-text">
         <h1>Rawat peliharaanmu dengan penuh cinta!</h1>
         <p>Panduan simpel biar hewan peliharaan tetap sehat, aktif, dan bahagia.</p>
-        <a href="#tips-section" class="btn-tips" onclick="scrollToTips()">Yuk, Cek Tipsnya!</a>
+        <a class="btn-tips" >Yuk, Cek Tipsnya!</a>
       </div>
       <div class="hero-img">
         <img src="{{ asset('image/edu-foto.png') }}" alt="Perempuan dengan kucing" />
