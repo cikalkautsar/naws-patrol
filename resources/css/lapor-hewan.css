@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #f7f7f7;
+    padding-bottom: 30px;
+  }
+  
+  .camera-upload {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 20px;
+  }
+  
+  .camera-box {
+    width: 80%;
+    max-width: 800px;
+    height: 250px;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 280px;
+    padding-top: 280px;
+  }
+  
+  .camera-box img {
+    width: 80px;
+    opacity: 0.5;
+  }
+  
+  .location {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 16px;
+    margin-left: 350px;
+
+  }
+  
+  .location-icon {
+    font-size: 22px;
+    color: #2B6ED6;
+    padding-right: 5px;  
+  }
+  
+  .location a {
+    color: #2B6ED6;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .report-form {
+    background-color: #2f3640;
+    color: white;
+    max-width: 850px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .report-form h2 {
+    margin-bottom: 25px;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    
+    border: 2px solid white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .form-group label {
+    flex: 1;
+    padding: 10px;
+    background-color: #383F47;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    border: solid;
+    outline: white;
+  }
+  
+  .form-group input {
+    flex: 3;
+    padding: 10px;
+    border: solid;
+    outline: white;
+    font-size: 14px;
+    background-color: #383F47;
+    color: white;
+
+  }
+  
+  .submit-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: none;
+    background-color: white;
+    color: #2f3640;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: right;
+  }
+  
+  .terms-link {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    font-size: 12px;
+    color: white;
+    text-decoration: underline;
+  }
+
+

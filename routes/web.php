@@ -20,5 +20,8 @@ Route::middleware('auth')->group(function () {
 Route::get('/edukasi', function () {
     return view('edukasi');
 });
+Route::get('/lapor-hewan', function () {
+    return view('lapor-hewan');
+});
 
 require __DIR__.'/auth.php';
