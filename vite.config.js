@@ -8,6 +8,7 @@ export default defineConfig({
                 'resources/css/app.css', 'resources/js/app.js',
                 'resources/css/edukasi.css', 'resources/js/edukasi.js',
                 'resources/css/style.css', 'resources/js/edukasi.js',
+                'resources/css/lapor-hewan.css', 'resources/js/lapor-hewan.js',
             ],
                 
             refresh: true,
