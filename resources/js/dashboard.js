@@ -1,74 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naw's Patrol - Pet Adoption</title>
-    @vite(['resources/css/dashboard.css', 'resources/js/dashboard.js'])
-
-    <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@1.4.2/src/css/phosphor.css">
-</head>
-<body>
-    <header class="header">
-        <div class="hero">
-            <h1>Naw's Patrol</h1>
-            <p>A system designed to address the issue of stray animals in Indonesia especially cats and dogs.</p>
-        <a href="{{ route('login') }}" class="cta-btn">
-            Join us
-        </a>
-        </div>
-        <div class="cat-image">
-            <img src="{{ asset('image/dashboard/cat-landing.png') }}" alt="Landing Cat" />
-        </div>
-    </header>
-
-    <div class="teks-adopsi">
-        <h2 class="section-title">Adoption Category</h2>
-        <p class="section-subtitle">Search for the Animal Category You Want to Adopt</p>
-    </div>
-
-    <main class="main-content">
-        <section class="adoption-section">
-            <div class="category-grid">
-                <div class="category-card cats active" onclick="selectCategory('cats')">
-                    <div class="category-icon">
-                        <img src="{{ asset('image/dashboard/cat.svg') }}" alt="Cat Icon" />
-                    </div>
-                    <h3>Cats</h3>
-                </div>
-                <div class="category-card dogs" onclick="selectCategory('dogs')">
-                    <div class="category-icon">
-                        <img src="{{ asset('image/dashboard/dog.svg') }}" alt="Dog Icon" />
-                    </div>
-                    <h3>Dogs</h3>
-                </div>
-                <div class="category-card birds" onclick="selectCategory('birds')">
-                    <div class="category-icon">
-                        <img src="{{ asset('image/dashboard/bird.svg') }}" alt="Bird Icon" />
-                    </div>
-                    <h3>Birds</h3>
-                </div>
-                <div class="category-card rabbits" onclick="selectCategory('rabbits')">
-                    <div class="category-icon">
-                        <img src="{{ asset('image/dashboard/rabbit.svg') }}" alt="Rabbit Icon" />
-                    </div>
-                    <h3>Rabbits</h3>
-                </div>
-            </div>
-        </section>
-
-        <section class="adoption-grid-section">
-            <h2>Help Me Find a <span class="highlight">Home</span></h2>
-            <p>Pet adoption is quickly becoming the preferred way to find a new dog, puppy, cat, kitten or pet</p>
-            <a href="#view-all" class="view-all">View All</a>
-
-            <div class="pet-grid" id="pet-grid">
-            
-            </div>
-        </section>
-    </main>
-</body>
-<script>console.log('>> dashboard.js loaded');
+console.log('>> dashboard.js loaded');
 
         const petData = {
             cats: [
@@ -362,5 +292,3 @@ function closePetModal() {
                 observer.observe(el);
             });
         }
-</script>
-</html>
