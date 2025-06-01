@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3001';
+
 
 document.addEventListener('DOMContentLoaded', function() {
 

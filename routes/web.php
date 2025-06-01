@@ -22,6 +22,32 @@ Route::get('/edukasi', function () {
 });
 Route::get('/lapor-hewan', function () {
     return view('lapor-hewan');
-});
+})->name('lapor-hewan');
+
+Route::post('/proses-lapor-hewan', function () {
+
+    request()->validate([
+        'nama' => 'required|string|max:255',
+        'telepon' => 'required|string|max:20',
+        'alamat' => 'required|string|max:500',
+        'alasan' => 'required|string|max:1000',
+        'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:512000', 
+        'lokasi_koordinat' => 'nullable|string'
+    ]);
+
+    $data = request()->all();
+
+    if (request()->hasFile('foto')) {
+        $foto = request()->file('foto');
+        $namaFoto = time() . '_' . $foto->getClientOriginalName();
+        $foto->move(public_path('uploads/laporan'), $namaFoto);
+        $data['foto_path'] = 'uploads/laporan/' . $namaFoto;
+    }
+
+    $data['tanggal_lapor'] = now();
+    $data['status'] = 'pending';
+    
+    return view('proses-lapor-hewan', compact('data'))->with('success', 'Laporan berhasil dikirim!');
+})->name('proses-lapor-hewan');
 
 require __DIR__.'/auth.php';
