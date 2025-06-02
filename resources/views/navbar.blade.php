@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Navbar</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  @vite(['resources/css/navbar.css', 'resources/js/navbar.js'])
+  @vite(['resources/js/navbar.js'])
 </head>
 <body>
 
@@ -17,7 +17,10 @@
   
     <div class="nav-center">
       <a href="#">Profile</a>
-      <a href="#">Adopsi</a>
+      <a href="{{ url('adopsi') }}"
+        class="{{ request()->is('adopsi') || request()->is('detail-adopsi') || request()->is('form-adopsi') || request()->is('konfirmasi-adopsi') || request()->is('sukses-adopsi') ? 'active' : '' }}">
+        adopsi
+</a>
       <a href="#">Foster</a>
       <a href="#">Laporan Hewan Liar</a>
       <a href="{{ url('donasi') }}"

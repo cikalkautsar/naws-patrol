@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donasi & Crowdfunding</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    @vite(['resources/css/metodeDonasi.css', 'resources/js/metodeDonasi.js'])
+    @vite(['resources/css/metodeDonasi.css', 'resources/js/metodeDonasi.js', 'resources/css/navbarWarna.css'])
 </head>
 
 <body>

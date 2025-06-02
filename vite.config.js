@@ -6,7 +6,7 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/css/app.css', 'resources/js/app.js',
-                'resources/css/navbar.css', 'resources/js/navbar.js',
+                'resources/css/navbarWarna.css', 'resources/css/navbarTransparan.css', 'resources/js/navbar.js',
                 'resources/css/donasi.css', 'resources/js/donasi.js',
                 'resources/css/dataPendonasi.css', 'resources/js/dataPendonasi.js',
                 'resources/css/metodeDonasi.css', 'resources/js/metodeDonasi.js',
