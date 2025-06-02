@@ -1,0 +1,113 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
+}
+
+.detail-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.main-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 400px;
+  margin-top: 130px;
+}
+
+.bottom-content {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+.left {
+  flex: 2;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.right {
+  flex: 1;
+}
+
+.adopt-box {
+  border: 1px solid #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  background: #FAAF32;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+
+.adopt-box p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.adopt-center {
+  text-align: center;
+}
+
+button {
+  background: #ffffff;
+  color: #FAAF32;
+  border: none;
+  padding: 10px 80px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+#petName,
+#petColor, #petBreed {
+  color: #FAAF32;
+}
+
+#petLocation,
+#petDescription {
+  color: #999999;
+}
+
+.left h3 {
+  color: #f59e0b;
+}
+
+#petAge,
+#petGender {
+  color: #f59e0b;
+  font-weight: 500;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #999999;
+  margin: 16px 0;
+}
+
+.dot-separator::before {
+  content: "•";
+  color: #FAAF32;
+  margin: 0 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+

@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Http\Controllers\AdopsiController;
 
 
 
@@ -39,6 +40,24 @@ Route::get('/pembayaran-donasi', function () {
 Route::get('/qr-code', function () {
     return view('qrDonasi');
 })->name('qr-code');
+
+Route::get('/adopsi', function () {
+    return view('adopsi');
+})->name('adopsi');
+
+Route::get('/detail-adopsi/{name}', [AdopsiController::class, 'showDetail'])->name('detail.adopsi');
+
+Route::get('/form-adopsi', [AdopsiController::class, 'showForm'])->name('adopsi.form');
+
+Route::get('/konfirmasiAdopsi', function () {
+    return view('konfirmasiAdopsi');
+})->name('konfirmasiAdopsi');
+
+Route::get('/sukses-adopsi', function () {
+    return view('suksesAdopsi');
+})->name('adopsi.sukses');
+
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
