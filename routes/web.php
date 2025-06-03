@@ -4,6 +4,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\AdopsiController;
+use App\Http\Controllers\ProfilController;
+
 
 
 
@@ -56,6 +58,13 @@ Route::get('/konfirmasiAdopsi', function () {
 Route::get('/sukses-adopsi', function () {
     return view('suksesAdopsi');
 })->name('adopsi.sukses');
+
+Route::get('/profil', [ProfilController::class, 'showProfile'])->name('profil');
+
+Route::get('/profil/edit', [ProfilController::class, 'edit'])->name('profil.edit');
+
+// Simpan perubahan profil
+Route::post('/profil/update', [ProfileController::class, 'update'])->name('profil.update');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
