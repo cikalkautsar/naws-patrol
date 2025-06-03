@@ -10,6 +10,11 @@ export default defineConfig({
                 'resources/css/style.css', 'resources/js/edukasi.js',
                 'resources/css/lapor-hewan.css', 'resources/js/lapor-hewan.js',
                 'resources/css/dashboard.css', 'resources/js/dashboard.js',
+                'resources/css/foster-home-form.css',
+                'resources/css/foster-home-info.css',
+                'resources/css/foster-home-report-progres.css',
+                'resources/css/landing-foster-home.css',
+                'resources/css/register-as-foster-home.css',
             ],
                 
             refresh: true,

@@ -1,0 +1,225 @@
+   * {
+      box-sizing: border-box;
+    }
+
+    body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .loading {
+      display: none;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .loading.show {
+      display: block;
+    }
+
+    .content.hide {
+      display: none;
+    }
+
+    .page-title {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .warning-box {
+      display: flex;
+      align-items: center;
+      background-color: #F3F3F3;
+      padding: 15px;
+      border: 1px solid #FAAF32;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .warning-icon {
+      font-weight: bold;
+      font-size: 13px;
+      color: #FAAF32;
+      margin-right: 10px;
+    }
+
+    .warning-text {
+      color: black;
+      font-size: 8px;
+    }
+
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .pet-card-section {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    padding: 1px;
+    width: 380px;
+    height: -200px;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    #petImage {
+    height: 380px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+    .pet-name-overlay {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 0;
+    }
+    
+    .pet-info-section {
+    flex: 1;
+    min-width: 250px;
+    border-color: #FAAF32;
+    background-color: #fafafa;
+    margin-left: 60px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    border-color: #FAAF32;
+    border-style: solid;   
+    border-width: 1px;    
+    border-radius: 5%;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 13px;
+      border-color: #FAAF32;
+      background-color: #fafafa;
+    }
+
+    .info-icon {
+      font-size: 6px;
+      margin-right: 10px;
+    }
+
+    .info-label {
+      font-weight: bold;
+      color: #FAAF32;
+      font-size: 13px;
+    }
+
+    .info-value{
+        color: #FAAF32;
+        font-size: 12px;
+    }
+
+    .form-section {
+    margin-top: 20px;
+    background-color: #FAAF32;
+    padding: 30px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    padding-right: 260px;
+    border-radius: 16px;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    .form-actions {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    gap: 560px;
+    }
+
+
+    .form-group input,
+    .form-group textarea {
+    width: 100%;  
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    .form-group label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+    }
+
+    .form-group input::placeholder {
+    color: white;
+    }
+
+    .form-group textarea::placeholder {
+    color: white;
+    }
+
+    .form-group {
+    color: white;
+    }
+
+    .checkbox-group label {
+    color: white;
+    margin-left: 8px;
+    font-size: 12px;
+    }
+
+    h3 {
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 5px;
+    }
+
+    .btn-primary {
+      background-color: #2B6ED6;
+      color: white;
+    }
+
+    .btn-danger {
+      background-color: #D62B2B;
+      color: white;
+    }
+
+    .hide {
+    display: none;
+    }
+    .show {
+    display: block;
+    }

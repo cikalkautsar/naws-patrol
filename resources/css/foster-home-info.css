@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.header {
+    background: url("/public/image/foster-home/paw-profile.png"); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 70px ;
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin-bottom: 60px;
+}
+
+.profile-container{
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding-top: -400px;
+}
+
+.profile-picture-container {
+    position: absolute;
+    top: 240px;
+    right: 130px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: none;
+    background-color: #ccc;
+  
+}
+
+.profile-picture-container img.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0 10px;
+    text-align: left;
+}
+
+.description {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: left;
+    max-width: 500px;
+}
+
+.profile-container {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 5%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  
+
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.info-item img {
+  width: 32px;
+  height: 32px;
+}
+
+.report-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.report-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: nowrap;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #fff;
+  min-width: 0; 
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 40px;
+  height: 40px;
+}
+
+.card.yellow {
+  background-color: #ffffff;
+   border: 1px solid #000000;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings-btn {
+  background-color: #FAAF32;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color:#ffffff;
+}
+
+.logout-btn {
+  background-color: #FF0000;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.icon-box {
+  background-color: #FAAF32; 
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box img {
+  width: 40px;
+  height: 40px;
+}
+
+.settings-btn,
+.logout-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.btn-icon.right {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
