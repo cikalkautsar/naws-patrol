@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Naw's Patrol</title>
-     @vite(['resources/css/adopsi.css', 'resources/js/adopsi.js'])
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -76,5 +75,6 @@
             kitten or etc.</p>
         <div id="default-pet-cards" class="pet-cards"></div>
     </section>
+    @vite(['resources/css/adopsi.css', 'resources/js/adopsi.js'])
 </body>
 </html>

@@ -1,8 +1,9 @@
-function goToPage(page) {
+window.goToPage = function(page) {
     showCategoryResults(page.replace('.html', ''));
 }
 
-function searchCategory() {
+
+window.searchCategory = function () {
     const input = document.getElementById('searchInput').value.toLowerCase();
     switch (input) {
         case 'cats':
@@ -77,7 +78,7 @@ function showCategoryResults(category) {
             const card = document.createElement('div');
             card.className = 'pet-card';
             card.innerHTML = `
-                <a href="detailAdopsi.html?nama=${encodeURIComponent(pet.name)}" class="card-link">
+                <a href="/detail-adopsi/${encodeURIComponent(pet.name)}" class="card-link">
                     <img src="${pet.image}" alt="${pet.name}">
                     <div class="overlay">
                         <h3>${pet.name}</h3>
@@ -153,4 +154,12 @@ function showDefaultPets() {
 
 window.onload = () => {
     showDefaultPets();
+
+    // Ambil nama file halaman (misalnya "cats.html") lalu ekstrak "cats"
+    const path = window.location.pathname;
+    const page = path.substring(path.lastIndexOf('/') + 1).replace('.html', '');
+
+    if (['cats', 'dogs', 'birds', 'rabbits'].includes(page)) {
+        showCategoryResults(page);
+    }
 };
