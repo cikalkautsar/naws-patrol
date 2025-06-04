@@ -57,6 +57,11 @@ Route::get('/sukses-adopsi', function () {
     return view('suksesAdopsi');
 })->name('adopsi.sukses');
 
+Route::get('/status-adopsi', function () {
+    return view('statusAdopsi');
+})->name('status.adopsi');
+
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

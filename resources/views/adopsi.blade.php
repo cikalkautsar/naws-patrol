@@ -62,7 +62,7 @@
     <section id="default-pets" class="adoption-section">
         <div class="section-header">
             <h2>Adoption status</h2>
-            <a href="#">View All</a>
+            <a href="{{ route('status.adopsi') }}">View All</a>
         </div>
         <p class="section-description">Pet adoption is quickly becoming the preferred way to find a new dog, puppy, cat,
             kitten or etc.</p>
