@@ -61,6 +61,10 @@ Route::get('/status-adopsi', function () {
     return view('statusAdopsi');
 })->name('status.adopsi');
 
+Route::get('/detail-sukses-adopsi', function () {
+    return view('detailSuksesAdopsi');
+})->name('detail.sukses.adopsi');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

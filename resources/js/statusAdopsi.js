@@ -42,8 +42,10 @@ function lihatDetail(nama) {
     localStorage.setItem("namaHewan", nama);
 
     // Pindah ke halaman detail
-    window.location.href = "detailSuksesAdopsi.html";
+    const encodedNama = encodeURIComponent(nama);
+    window.location.href = `/detail-sukses-adopsi?nama=${encodedNama}`;
 }
+window.lihatDetail = lihatDetail;
 
 
 const cardContainer = document.getElementById("cardContainer");
