@@ -13,9 +13,7 @@
         <div class="hero">
             <h1>Naw's Patrol</h1>
             <p>A system designed to address the issue of stray animals in Indonesia especially cats and dogs.</p>
-        <a href="{{ route('login') }}" class="cta-btn">
-            Join us
-        </a>
+        <a href="{{ route('login') }}" class="cta-btn">Join us</a>
         </div>
         <div class="cat-image">
             <img src="{{ asset('image/dashboard/cat-landing.png') }}" alt="Landing Cat" />
@@ -32,25 +30,25 @@
             <div class="category-grid">
                 <div class="category-card cats active" onclick="selectCategory('cats')">
                     <div class="category-icon">
-                        <img src="{{ asset('image/dashboard/cat.svg') }}" alt="Cat Icon" />
+                        <img src="{{ asset('image/dashboard/icon-cat-landing.png') }}" alt="Cat Icon" />
                     </div>
                     <h3>Cats</h3>
                 </div>
                 <div class="category-card dogs" onclick="selectCategory('dogs')">
                     <div class="category-icon">
-                        <img src="{{ asset('image/dashboard/dog.svg') }}" alt="Dog Icon" />
+                        <img src="{{ asset('image/dashboard/icon-dog-landing.png') }}" alt="Dog Icon" />
                     </div>
                     <h3>Dogs</h3>
                 </div>
                 <div class="category-card birds" onclick="selectCategory('birds')">
                     <div class="category-icon">
-                        <img src="{{ asset('image/dashboard/bird.svg') }}" alt="Bird Icon" />
+                        <img src="{{ asset('image/dashboard/icon-bird-landing.png') }}" alt="Bird Icon" />
                     </div>
                     <h3>Birds</h3>
                 </div>
                 <div class="category-card rabbits" onclick="selectCategory('rabbits')">
                     <div class="category-icon">
-                        <img src="{{ asset('image/dashboard/rabbit.svg') }}" alt="Rabbit Icon" />
+                        <img src="{{ asset('image/dashboard/icon-rabbit-landing.png') }}" alt="Rabbit Icon" />
                     </div>
                     <h3>Rabbits</h3>
                 </div>
