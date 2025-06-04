@@ -11,9 +11,6 @@
 
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="nav-left">
-      <button class="logo">Logo</button>
-    </div>
   
     <div class="nav-center">
       <a href="#">Profile</a>
@@ -30,10 +27,7 @@
 
       <a href="#">Edukasi</a>
     </div>
-  
-    <div class="nav-right">
-      <button class="user">user</button>
-    </div>
+
   </nav>
 </body>
 </html>
